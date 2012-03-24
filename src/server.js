@@ -6,7 +6,7 @@ var app = express.createServer(),
     pub = __dirname + '/public';
 
 var controller_directory = './controllers/';
-fs.readdir(controller_directory, function(err, files){
+fs.readdir(controller_directory, function(err, files){git
     _(files).each(function (controller_file){
         var controller = require(controller_directory + controller_file);
         if ('init' in controller){
